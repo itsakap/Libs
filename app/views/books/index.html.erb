@@ -1,9 +1,9 @@
 <h1>Here is a list of Books for you!</h1>
-
+<p id = "notice"><%= notice %></p>
 <ul>
 <% @books.each do |b| %>
   <li><%= b.title %> by <%= b.author %></li>
 <% end %>
 </ul>
 
-Add a new Book
+<%= link_to 'New Book',new_book_path %>

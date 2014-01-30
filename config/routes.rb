@@ -1,6 +1,8 @@
 Library::Application.routes.draw do
   resources :books
   get 'books' => "books#index"
+  get 'books/new' => 'books#new'
+  post 'books' => 'books#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -11,13 +11,14 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     if @book.save
       redirect_to action: 'index'
+      flash[:notice] = "ERmagerd you got new book"
     else
       render action:'new'
     end
   end
 
   private
-  
+
   def book_params
 
     params.require(:book).permit(:title,:author,:publication_year,:isbn,:genre)
