@@ -2,7 +2,7 @@
 <p id = "notice"><%= notice %></p>
 <ul>
 <% @books.each do |b| %>
-  <li><%= b.title %> by <%= b.author %></li>
+  <li><%= b.title %> by <%= b.author %> <%= link_to 'Show', b %> <%= link_to 'Edit', edit_book_path(b) %></li>
 <% end %>
 </ul>
 

@@ -1,0 +1,23 @@
+<%= form_for @book do |b| %>
+  <div class = "field">
+    <%= b.label :title %>
+    <%= b.text_field :title %>
+  </div>
+  <div class = "field">
+    <%= b.label :author %>
+    <%= b.text_field :author %>
+  </div>
+  <div class = "field">
+    <%= b.label :publication_year %>
+    <%= b.text_field :publication_year %>
+  </div>
+  <div class = "field">
+    <%= b.label :isbn %>
+    <%= b.text_field :isbn %>
+  </div>
+  <div class = "field">
+    <%= b.label :genre %>
+    <%= b.text_field :genre %>
+  </div>
+  <div><%= b.submit %></div>
+<% end %>
